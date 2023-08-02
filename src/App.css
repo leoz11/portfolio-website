@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Definir a altura total da tela */
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section h2 {
+  margin-top: 0;
+}
+
+#home {
+  text-align: center;
+  margin-top: 60px; /* Definir a margem superior para afastar da navbar */
+}
+
+@keyframes colorChange {
+  0% {
+    color: blue; /* Cor inicial */
+  }
+  50% {
+    color: green; /* Cor intermediária */
+  }
+  100% {
+    color: red; /* Cor final */
+  }
+}
+
+.angle-brackets {
+  animation: colorChange 4s infinite; /* Duração da animação e repetição infinita */
+}
+
+.title {
+  font-size: 60px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #333; /* Or any color you prefer */
+  transition: transform 0.2s; /* Add a transition for smooth zoom effect */
+}
+
+.social-icons a:hover {
+  transform: scale(1.2); /* Zoom effect on hover */
+}
+
+.twitter {
+  color: #007bff;
+  font-size: 30px;
+}
+
+.linkedin {
+  color: #084d6e;
+  font-size: 30px;
+}
+
+.github {
+  color: #333;
+  font-size: 30px;
+}
+
+.youtube {
+  color: #FF0000;
+  font-size: 30px;
+}

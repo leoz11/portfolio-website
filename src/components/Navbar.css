@@ -1,0 +1,107 @@
+/* Navbar.css */
+.navbar {
+  color: #000;
+  background-color: white;
+  padding: 10px;
+  position: fixed; /* Add this line to fix the navbar */
+  top: 0; /* Add this line to position it at the top */
+  left: 0; /* Add this line to position it at the left */
+  right: 0; /* Add this line to make it full-width */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 1.5rem;
+}
+
+.brand img {
+  width: 60px;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background-color: #9c36fc;
+  transition: width 0.2s;
+}
+
+.navbar-menu a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: opacity 0.3s;
+  cursor: pointer;
+  position: relative;
+  
+}
+
+.navbar-menu a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #9c36fc;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s;
+}
+
+.navbar-menu a:hover::after {
+  width: 100%;
+}
+
+/* Responsividade */
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 5px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-menu a {
+    color: #000;;
+  }
+
+  .navbar-menu a:hover::after {
+    width: 0;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
