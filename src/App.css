@@ -5,7 +5,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Definir a altura total da tela */
+  min-height: 100vh;
+}
+
+.geral {
+  text-align: center;
 }
 
 .section {
@@ -14,6 +18,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.section.hovered {
+  background-color: #007bff;
+  color: #fff;
 }
 
 .section h2 {
@@ -22,7 +32,6 @@ body {
 
 #home {
   text-align: center;
-  margin-top: 60px; /* Definir a margem superior para afastar da navbar */
 }
 
 @keyframes colorChange {
@@ -43,6 +52,18 @@ body {
 
 .title {
   font-size: 60px;
+  font-weight: bold;
+}
+
+.sub-title {
+  font-size: 35px;
+  color: #646464;
+}
+
+.home-text {
+  font-size: 18px;
+  text-align: center; /* Center-align the text */
+  width: 85vh;
 }
 
 .social-icons {
@@ -64,20 +85,210 @@ body {
 
 .twitter {
   color: #007bff;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .linkedin {
   color: #084d6e;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .github {
   color: #333;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .youtube {
   color: #FF0000;
-  font-size: 30px;
+  font-size: 40px;
+}
+
+#home img {
+  width: 30vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.dark-mode body {
+  color: #fff;
+  background-color: #000;
+}
+
+body, .dark-mode-transition {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode-toggle {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  #home img {
+    width: 55vh;
+    margin-top: 100px;
+  }
+
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .home-text {
+    font-size: 18px;
+    text-align: justify; /* Center the text */
+    padding: 20px; /* Add padding for spacing */
+  }
+}
+
+.fade-in {
+  animation: fade-in 1s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 10vh;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding-bottom: 0;
+  padding-top: 20px;
+  width: calc(33.33% - 20px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.visit-button {
+  background-color: transparent;
+  color: #fff;
+  background-color: #007bff;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: auto;
+  overflow: hidden;
+}
+
+.visit-button:hover {
+  background-color: #001e3d;
+}
+
+#tecnologias {
+  margin-top: 20px; /* Change this value as needed */
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px; /* Add margin to the bottom */
+}
+
+.background {
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+
+#tecnologias {
+  margin-top: 20px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow icons to wrap to the next line */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tech-icon {
+  font-size: 40px;
+  margin: 10px; /* Add spacing around each icon */
+}
+
+/* Define colors for each icon */
+.html-icon {
+  color: #E44D26; /* HTML color */
+}
+
+.css-icon {
+  color: #264de4; /* CSS color */
+}
+
+.js-icon {
+  color: #F7DF1E; /* JavaScript color */
+}
+
+.react-icon {
+  color: #61DAFB; /* React color */
+}
+
+.bootstrap-icon {
+  color: #563D7C; /* Bootstrap color */
+}
+
+.node-icon {
+  color: #339933; /* Node.js color */
+}
+
+.db-icon {
+  color: #47A248; /* Database color */
+}
+
+.firebase-icon {
+  color: #FFCA28; /* Firebase color */
+}
+
+.git-icon {
+  color: #F05032; /* Git color */
+}
+
+.tailwind-icon {
+  color: #38B2AC; /* Tailwind color */
+}
+
+.tech-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  border-radius: 5px;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
 }
