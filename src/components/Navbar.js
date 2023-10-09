@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
+import { FaBars } from 'react-icons/fa';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -25,13 +26,15 @@ const Navbar = () => {
   const sections = [
     { id: 'home', text: 'Home' },
     { id: 'projetos', text: 'Projetos' },
-    { id: 'contato', text: 'Contato' },
+    { id: 'skills', text: 'Conhecimentos' },
+    { id: 'sobre', text: 'Sobre' },
+    { id: 'youtube', text: 'Meu canal' },
   ];
 
   return (
     <nav className="navbar">
       <div className="navbar-container">
-      <div className="brand">&lt; Léo &gt;</div>
+        <div className="brand">&lt; Leonardo &gt;</div>
         <div className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
           {sections.map((section) => (
             <Link
@@ -49,9 +52,7 @@ const Navbar = () => {
           ))}
         </div>
         <div className={`navbar-toggle ${isMenuOpen ? 'active' : ''}`} onClick={toggleNavbar}>
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
+          <FaBars />
         </div>
       </div>
       <div className="progress-bar" style={{ width: `${scrollProgress}%` }} />
