@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="brand">&lt; Leonardo &gt;</div>
+        <div className="brand">Leonardo Oliveira</div>
         <div className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
           {sections.map((section) => (
             <Link
