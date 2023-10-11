@@ -301,6 +301,7 @@ body,
 
 .tech-card:hover {
   transform: translateY(-5px);
+  border: 1px solid #007bff;
 }
 
 #sobre {
@@ -471,6 +472,58 @@ body,
 }
 
 @media screen and (max-width: 768px) {
+  .redes-sociais a {
+    padding: 20px 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .geral {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .home-text {
+    font-size: 14px;
+    text-align: justify;
+    padding: 10px;
+    width: 90%;
+  }
+
+  .tech-card {
+    padding: 10px;
+    width: calc(50% - 20px);
+    max-width: 200px;
+  }
+
+  .tech-icon {
+    font-size: 30px;
+  }
+
+  #sobre p {
+    font-size: 16px;
+  }
+
+  #home img {
+    width: 35vh;
+    margin-top: 20px;
+  }
+
+  .video-wrapper {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .redes-sociais a {
     padding: 20px 100px;
   }
