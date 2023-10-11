@@ -7,6 +7,7 @@ import { BiLogoTailwindCss, BiLogoMongodb } from 'react-icons/bi';
 
 import background from './mini-blog.jpg';
 import background_two from './countdown.jpg';
+import ytchannel from './ytchannel.jpg'
 
 const App = () => {
   return (
@@ -49,7 +50,7 @@ const App = () => {
             <div className='projects'>
               <div className="card">
                 <h3>Mini-Blog</h3>
-                <img className='background' src={background} alt="miniblog" />
+                <img className='background' src={background} alt="" />
                 <p>Projeto "Mini-Blog" feito utilizando REACT.JS e Firebase.</p>
                 <a href="https://mini-blog-leo.vercel.app" target="_blank" rel="noopener noreferrer" className="visit-button">Visitar</a>
               </div>
@@ -57,7 +58,7 @@ const App = () => {
             <div className='projects'>
               <div className="card">
                 <h3>Countdown to next year</h3>
-                <img className='background' src={background_two} alt="countdown" />
+                <img className='background' src={background_two} alt="" />
                 <p>Projeto "Countdown to next year" feito utilizando REACT.JS.</p>
                 <a href="https://mini-blog-leo.vercel.app" target="_blank" rel="noopener noreferrer" className="visit-button">Visitar</a>
               </div>
@@ -159,7 +160,7 @@ const App = () => {
     </div>
 
       <div className="section" id="youtube">
-      <img src={background_two} alt="Canal do YouTube" className="youtube-background" />
+      <img src={ytchannel} alt="Canal do YouTube" className="youtube-background" />
       <h1>Meu Canal no YouTube</h1>
       <p>Aqui você encontra vídeos sobre programação e desenvolvimento web.</p>
       <div className="video-container">
