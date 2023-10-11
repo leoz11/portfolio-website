@@ -140,7 +140,7 @@ const App = () => {
         {/* Seção Sobre */}
         <div className="section" id="sobre">
           <h2>Um pouco sobre mim...</h2>
-          <p>Eu me chamo Leonardo, mas pode me chamar de Léo. Sou apaixonado por programação desde 2018, quando comecei criando plugins para jogos, mas foi em 2021 que eu decidi mergulhar no desenvolvimento web. Minha paixão é criar aplicações responsivas, modernas e intuítivas. Amo participar de projetos, desde o planejamento até a execução, é a minha vibe, transformando ideias em realidade palpável. Se você está em busca de um desenvolvedor que entende tanto de códigos quanto das necessidades humanas, estou pronto para encarar desafios e criar soluções que realmente importam</p>
+          <p>Eu me chamo Leonardo, mas pode me chamar de Léo, eu sou da cidade de Pelotas, no Rio Grande do Sul. Sou apaixonado por programação desde 2018, quando comecei criando plugins para jogos, mas foi em 2021 que eu decidi mergulhar de vez no desenvolvimento web. Minha paixão é criar aplicações responsivas, modernas e intuítivas. Amo participar de projetos, desde o planejamento até a execução, é a minha vibe, transformando ideias em realidade palpável. Se você está em busca de um desenvolvedor que entende tanto de códigos quanto das necessidades humanas, estou pronto para encarar desafios e criar soluções que realmente são úteis.</p>
           <p>Abaixo você encontra minhas redes sociais.</p>       
           <div className="social-icons">
             <a href="https://twitter.com/leoz_js" target="_blank" rel="noopener noreferrer">
