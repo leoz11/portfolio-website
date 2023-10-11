@@ -528,3 +528,63 @@ body,
     padding: 20px 100px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px; /* Adjust the base font size */
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .home-text {
+    font-size: 12px;
+    text-align: justify;
+    padding: 10px;
+    width: 90%;
+  }
+
+  .tech-card {
+    width: calc(100% - 20px);
+    max-width: none;
+  }
+
+  .tech-icon {
+    font-size: 25px;
+    margin: 5px;
+  }
+
+  #sobre h2 {
+    font-size: 30px;
+  }
+
+  #sobre p {
+    font-size: 14px;
+  }
+
+  #home img {
+    width: 60vh;
+    margin-top: 20px;
+  }
+
+  .video-container {
+    flex-direction: column;
+  }
+
+  .video-wrapper {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .youtube-video {
+    width: 90%;
+  }
+
+  .redes-sociais a {
+    padding: 10px 50px;
+  }
+}
