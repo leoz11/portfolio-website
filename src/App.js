@@ -6,7 +6,7 @@ import { FaTwitter, FaLinkedin, FaGithub, FaYoutube, FaHtml5, FaCss3, FaJs, FaRe
 import { BiLogoTailwindCss, BiLogoMongodb } from 'react-icons/bi';
 
 import background from './mini-blog.jpg';
-import background_two from './ytchannel.jpg';
+import background_two from './countdown.jpg';
 
 const App = () => {
   return (
@@ -51,6 +51,12 @@ const App = () => {
                 <h3>Mini-Blog</h3>
                 <img className='background' src={background} alt="" />
                 <p>Projeto "Mini-Blog" feito utilizando REACT.JS e Firebase.</p>
+                <a href="https://mini-blog-leo.vercel.app" target="_blank" rel="noopener noreferrer" className="visit-button">Visitar</a>
+              </div>
+              <div className="card">
+                <h3>Mini-Blog</h3>
+                <img className='background' src={background_two} alt="" />
+                <p>Projeto "Countdown to next year" feito utilizando REACT.JS.</p>
                 <a href="https://mini-blog-leo.vercel.app" target="_blank" rel="noopener noreferrer" className="visit-button">Visitar</a>
               </div>
             </div>
