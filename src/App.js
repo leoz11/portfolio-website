@@ -60,7 +60,7 @@ const App = () => {
                 <h3>Countdown to next year</h3>
                 <img className='background' src={background_two} alt="" />
                 <p>Projeto "Countdown to next year" feito utilizando REACT.JS.</p>
-                <a href="https://mini-blog-leo.vercel.app" target="_blank" rel="noopener noreferrer" className="visit-button">Visitar</a>
+                <a href="https://countdown-to-next-year.vercel.app" target="_blank" rel="noopener noreferrer" className="visit-button">Visitar</a>
               </div>
             </div>
           </div>
