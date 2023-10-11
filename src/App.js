@@ -5,8 +5,6 @@ import coffee from './coffee.gif';
 import { FaTwitter, FaLinkedin, FaGithub, FaYoutube, FaHtml5, FaCss3, FaJs, FaReact, FaBootstrap, FaNodeJs, FaFire, FaGit } from 'react-icons/fa';
 import { BiLogoTailwindCss, BiLogoMongodb } from 'react-icons/bi';
 
-import YouTube from 'react-youtube';
-
 import background from './mini-blog.jpg';
 import background_two from './ytchannel.jpg';
 
@@ -157,18 +155,30 @@ const App = () => {
       <h1>Meu Canal no YouTube</h1>
       <p>Aqui você encontra vídeos sobre programação e desenvolvimento web.</p>
       <div className="video-container">
-        <div className="video-wrapper">
-          <div className="youtube-video">
-            <YouTube videoId="UoPp9DE2X3E" opts={{ width: '100%', height: '315' }} />
+          <div className="video-wrapper">
+            <div className="youtube-video">
+              <iframe 
+                width="100%" 
+                height="315" 
+                src="https://www.youtube.com/embed/UoPp9DE2X3E" 
+                title="Video 1"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
-        </div>
-        <div className="video-wrapper">
-          <div className="youtube-video">
-            <YouTube videoId="-yu0nBthAdo" opts={{ width: '100%', height: '315' }} />
+          <div className="video-wrapper">
+            <div className="youtube-video">
+              <iframe 
+                width="100%" 
+                height="315" 
+                src="https://www.youtube.com/embed/-yu0nBthAdo" 
+                title="Video 2"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };

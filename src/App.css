@@ -74,14 +74,14 @@ body {
 }
 
 .social-icons a {
-  margin: 0 8px; /* Reduzi um pouco o espaçamento */
-  font-size: 20px; /* Reduzi o tamanho dos ícones */
+  margin: 0 8px;
+  font-size: 20px;
   color: #333;
-  background-color: #f7f7f7; /* Cor de fundo neutra */
-  border-radius: 5px; /* Borda arredondada */
-  padding: 8px 12px; /* Espaçamento interno */
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  padding: 8px 12px;
   text-decoration: none;
-  transition: transform 0.2s, background-color 0.2s; /* Transição suave */
+  transition: transform 0.2s, background-color 0.2s;
   border: 1px solid #000;
 }
 
@@ -247,43 +247,43 @@ body,
 }
 
 .html-icon {
-  color: #E44D26; /* HTML color */
+  color: #E44D26;
 }
 
 .css-icon {
-  color: #264de4; /* CSS color */
+  color: #264de4;
 }
 
 .js-icon {
-  color: #F7DF1E; /* JavaScript color */
+  color: #F7DF1E;
 }
 
 .react-icon {
-  color: #61DAFB; /* React color */
+  color: #61DAFB;
 }
 
 .bootstrap-icon {
-  color: #563D7C; /* Bootstrap color */
+  color: #563D7C;
 }
 
 .nodejs-icon {
-  color: #339933; /* Node.js color */
+  color: #339933;
 }
 
 .mongodb-icon {
-  color: #47A248; /* Database color */
+  color: #47A248;
 }
 
 .firebase-icon {
-  color: #FFCA28; /* Firebase color */
+  color: #FFCA28;
 }
 
 .git-icon {
-  color: #F05032; /* Git color */
+  color: #F05032;
 }
 
 .tailwind-icon {
-  color: #38B2AC; /* Tailwind color */
+  color: #38B2AC;
 }
 
 .tech-card {
@@ -457,7 +457,7 @@ body,
   display: flex;
   align-items: center;
   margin: 10px;
-  padding: 20px 250px; /* Aumentando o padding para tornar os botões ainda mais largos */
+  padding: 20px 250px;
   background-color: #ffffff;
   color: #000;
   border-radius: 50px;
