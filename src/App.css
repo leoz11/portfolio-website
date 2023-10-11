@@ -595,3 +595,8 @@ body,
     padding: 10px 30px;
   }
 }
+
+.tech-card,
+.visit-button {
+  z-index: 999;
+}
