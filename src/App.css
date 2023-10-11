@@ -531,11 +531,11 @@ body,
 
 @media screen and (max-width: 480px) {
   body {
-    font-size: 14px; /* Adjust the base font size */
+    font-size: 14px;
   }
 
   .title {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bold;
   }
 
@@ -544,6 +544,7 @@ body,
     text-align: justify;
     padding: 10px;
     width: 90%;
+    margin: 0 auto;
   }
 
   .tech-card {
@@ -552,21 +553,26 @@ body,
   }
 
   .tech-icon {
-    font-size: 25px;
+    font-size: 20px;
     margin: 5px;
   }
 
   #sobre h2 {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   #sobre p {
     font-size: 14px;
+    max-width: 300px;
+    margin: 0 auto;
   }
 
   #home img {
-    width: 60vh;
+    width: 25vh;
     margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .video-container {
@@ -582,9 +588,10 @@ body,
 
   .youtube-video {
     width: 90%;
+    max-width: 300px;
   }
 
   .redes-sociais a {
-    padding: 10px 50px;
+    padding: 10px 30px;
   }
 }
