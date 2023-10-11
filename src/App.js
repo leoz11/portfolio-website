@@ -53,8 +53,10 @@ const App = () => {
                 <p>Projeto "Mini-Blog" feito utilizando REACT.JS e Firebase.</p>
                 <a href="https://mini-blog-leo.vercel.app" target="_blank" rel="noopener noreferrer" className="visit-button">Visitar</a>
               </div>
+            </div>
+            <div className='projects'>
               <div className="card">
-                <h3>Countdown to next year</h3>
+                <h3>Mini-Blog</h3>
                 <img className='background' src={background_two} alt="" />
                 <p>Projeto "Countdown to next year" feito utilizando REACT.JS.</p>
                 <a href="https://mini-blog-leo.vercel.app" target="_blank" rel="noopener noreferrer" className="visit-button">Visitar</a>
