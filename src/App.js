@@ -55,6 +55,7 @@ const App = () => {
         
         <div className="section" id="projetos">
           <h1>Meus Projetos</h1>
+          <p>Abaixo encontram-se os meus projetos! Você pode visitá-los e conhecê-los você mesmo.</p>
           <div className="project-container">
             <div className="project-card">
               <img src={background} alt="Projeto Mini Blog" />
