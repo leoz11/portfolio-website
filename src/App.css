@@ -161,40 +161,68 @@ body,
   margin-bottom: 10px;
 }
 
-.projects {
+.project-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  margin-top: 20px;
 }
 
-.card {
+.project-card {
   max-width: 300px;
   margin: 20px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #a7a7a7;
+}
+
+.project-card:hover {
+  border: 1px solid #007bff;
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.project-description {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.visit-button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
   text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.card h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  font-weight: 500;
+.visit-button:hover {
+  background-color: #0056b3;
 }
 
-.card p {
-  font-size: 16px;
-  color: #333;
+@media screen and (max-width: 768px) {
+  .project-card {
+    max-width: 50%;
+  }
 }
 
-.card img {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
 
 @media screen and (max-width: 768px) {
   .card {
@@ -599,4 +627,325 @@ body,
 .tech-card,
 .visit-button {
   z-index: 999;
+}
+
+@media screen and (max-width: 1024px) and (max-height: 600px) {
+  .geral {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  .section {
+    min-height: auto;
+  }
+
+  #home img {
+    width: 50vh;
+    margin-top: 20px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .home-text {
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .tech-card,
+  .visit-button {
+    position: static;
+    margin: 10px;
+    z-index: auto;
+  }
+
+  .video-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .youtube-video {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .redes-sociais a {
+    padding: 10px 30px;
+  }
+
+  .video-wrapper {
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (max-width: 280px) and (max-height: 653px) {
+
+  body {
+    font-size: 12px;
+  }
+
+  .geral {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .home-text {
+    font-size: 12px;
+    text-align: justify;
+    padding: 10px;
+    width: 90%;
+  }
+
+  .tech-card {
+    padding: 5px;
+    width: calc(50% - 10px);
+    max-width: 100px;
+  }
+
+  .tech-icon {
+    font-size: 16px;
+    margin: 3px;
+  }
+
+  #sobre h2 {
+    font-size: 20px;
+  }
+
+  #sobre p {
+    font-size: 12px;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  #home img {
+    width: 15vh;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .video-container {
+    flex-direction: column;
+  }
+
+  .video-wrapper {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .youtube-video {
+    width: 90%;
+    max-width: 200px;
+  }
+
+  .redes-sociais a {
+    padding: 5px 15px;
+  }
+
+  .social-icons a {
+    margin: 0 5px;
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  .visit-button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .tech-card,
+  .visit-button {
+    z-index: auto;
+  }
+
+  .redes-sociais a {
+    padding: 5px 15px;
+  }
+}
+
+
+@media screen and (max-width: 912px) and (max-height: 1368px) {
+
+  body {
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .home-text {
+    font-size: 16px;
+    text-align: justify;
+    padding: 10px;
+    width: 90%;
+  }
+
+  .tech-card {
+    padding: 10px;
+    width: calc(50% - 20px);
+    max-width: 200px;
+  }
+
+  .tech-icon {
+    font-size: 30px;
+    margin: 10px;
+  }
+
+  #sobre h2 {
+    font-size: 30px;
+  }
+
+  #sobre p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #home img {
+    width: 25vh;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .video-container {
+    flex-direction: column;
+  }
+
+  .video-wrapper {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .youtube-video {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .redes-sociais a {
+    padding: 10px 30px;
+  }
+
+  .social-icons a {
+    margin: 0 8px;
+    font-size: 20px;
+    padding: 8px 12px;
+  }
+
+  .visit-button {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+
+  .tech-card,
+  .visit-button {
+    z-index: auto;
+  }
+
+  .redes-sociais a {
+    padding: 10px 30px;
+  }
+}
+
+@media screen and (max-width: 320px) and (max-height: 844px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .home-text {
+    font-size: 12px;
+    text-align: justify;
+    padding: 10px;
+    width: 90%;
+  }
+
+  .tech-card {
+    padding: 5px;
+    width: calc(50% - 10px);
+    max-width: 100px;
+  }
+
+  .tech-icon {
+    font-size: 16px;
+    margin: 3px;
+  }
+
+  #sobre h2 {
+    font-size: 20px;
+  }
+
+  #sobre p {
+    font-size: 12px;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  #home img {
+    width: 15vh;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .video-container {
+    flex-direction: column;
+  }
+
+  .video-wrapper {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .youtube-video {
+    width: 90%;
+    max-width: 200px;
+  }
+
+  .redes-sociais a {
+    padding: 5px 15px;
+  }
+
+  .social-icons a {
+    margin: 0 5px;
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  .visit-button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .tech-card,
+  .visit-button {
+    z-index: auto;
+  }
+
+  .redes-sociais a {
+    padding: 5px 15px;
+  }
 }
