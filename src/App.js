@@ -61,7 +61,7 @@ const App = () => {
               <img src={background} alt="Projeto Mini Blog" />
               <div className="project-title">Mini Blog</div>
               <div className="project-description">Um projeto de miniblog com React e Firebase.</div>
-              <a href="https://mini-blog-leo.vercel.app" target="_blank" rel="noopener noreferrer">
+              <a href="https://miniblog-x.vercel.app" target="_blank" rel="noopener noreferrer">
                 <button className="visit-button">Visitar</button>
               </a>
             </div>
