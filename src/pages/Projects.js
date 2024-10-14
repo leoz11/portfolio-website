@@ -152,7 +152,7 @@ const Projects = () => {
           <TechItem>LocalStorage</TechItem>
         </TechList>
         <ButtonGroup>
-          <VisitButton href="https://notedz.vercel.app" target="_blank" rel="noopener noreferrer">
+          <VisitButton href="https://commitzz.vercel.app" target="_blank" rel="noopener noreferrer">
             <VisitButtonText>Visitar projeto</VisitButtonText>
             <FiExternalLink size={16} />
           </VisitButton>
