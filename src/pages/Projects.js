@@ -1,33 +1,31 @@
-// src/pages/Projects.js
-
 import React from 'react';
 import styled from 'styled-components';
-import projectImage from '../assets/notedzv2.jpg'; // Importe a imagem de capa do projeto
-import { FiExternalLink } from 'react-icons/fi'; // Importe o ícone para abrir em outra aba
+import projectImage from '../assets/notedzv2.jpg';
+import projectImageTwo from '../assets/commitz.jpg';
+import { FiExternalLink } from 'react-icons/fi';
 
 const ProjectsWrapper = styled.div`
   text-align: left;
   max-width: 800px;
   width: 100%;
-  margin-top: 2rem;
 
   @media (max-width: 768px) {
-    padding: 0 0.5rem; /* Ajuste para dispositivos móveis */
+    padding: 0 0.5rem;
   }
 `;
 
 const Title = styled.h1`
-  font-size: 0.9rem;
-  color: ${(props) => props.theme.text};
+  font-size: 2.5rem;
+  margin-bottom: 3vh;
 
   @media (max-width: 768px) {
-    font-size: 0.7rem; /* Ajuste para telas menores */
+    font-size: 0.7rem;
   }
 `;
 
 const ProjectItem = styled.div`
   background-color: ${(props) => props.theme.cardBackground};
-  padding-top: 1.5rem;
+  padding: 1.5rem;
   border-radius: 5px;
   margin-bottom: 2rem;
 `;
@@ -37,6 +35,12 @@ const ProjectImage = styled.img`
   height: auto;
   border-radius: 5px;
   margin-bottom: 1rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
 `;
 
 const ProjectDescription = styled.p`
@@ -45,7 +49,7 @@ const ProjectDescription = styled.p`
   margin-top: 0.5rem;
 
   @media (max-width: 768px) {
-    font-size: 0.9rem; /* Ajuste para dispositivos móveis */
+    display: none;
   }
 `;
 
@@ -53,24 +57,23 @@ const TechList = styled.div`
   display: flex;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
-  flex-wrap: wrap; /* Para adaptar em telas menores */
+  flex-wrap: wrap;
 `;
 
 const TechItem = styled.span`
-  background-color: transparent; /* Fundo transparente */
-  color: ${(props) => props.theme.text}; /* Texto se adapta ao tema */
+  background-color: transparent;
+  color: ${(props) => props.theme.text};
   padding: 0.3rem 0.6rem;
-  border-radius: 20px;
-  border: 1px solid ${(props) => props.theme.text}; /* Borda adaptada ao tema (branca no dark mode e preta no light mode) */
+  border: 1px solid ${(props) => props.theme.text};
   font-size: 0.9rem;
 
   @media (max-width: 768px) {
-    font-size: 0.4rem; /* Ajuste para dispositivos móveis */
+    font-size: 0.7rem;
   }
 `;
 
 const VisitButton = styled.a`
-  display: inline-flex; /* Flex para alinhar o ícone e o texto */
+  display: inline-flex;
   align-items: center;
   padding: 0.75rem 1.5rem;
   background-color: ${(props) => props.theme.buttonBackground};
@@ -78,23 +81,24 @@ const VisitButton = styled.a`
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  border: 1px solid ${(props) => props.theme.text}; /* Borda preta ou branca dependendo do tema */
-  transition: background-color 0.3s, color 0.3s; /* Transições suaves para hover */
-  margin-right: 1rem; /* Espaço entre os botões */
+  border: 1px solid ${(props) => props.theme.text};
+  transition: background-color 0.3s, color 0.3s;
+  flex: 1;
+  justify-content: center;
 
   &:hover {
-    background-color: ${(props) => props.theme.text}; /* Inverta a cor no hover */
+    background-color: ${(props) => props.theme.text};
     color: ${(props) => props.theme.background};
   }
 
   @media (max-width: 768px) {
-    padding: 0.2rem 0.8rem; /* Ajuste para dispositivos móveis */
+    padding: 0.2rem 1rem;
     font-size: 0.9rem;
   }
 `;
 
 const VisitButtonText = styled.span`
-  margin-right: 0.5rem; /* Espaço entre o texto e o ícone */
+  margin-right: 0.5rem;
 `;
 
 const ProjectUnderline = styled.u`
@@ -106,7 +110,7 @@ const ProjectUnderline = styled.u`
 const ButtonGroup = styled.div`
   display: flex; 
   gap: 1rem; 
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 1.5rem;
 `;
 
@@ -114,39 +118,50 @@ const Projects = () => {
   return (
     <ProjectsWrapper>
       <Title>Meus Projetos</Title>
-
       <ProjectItem>
-        {/* Imagem de capa do projeto */}
+        <h1>Notedz</h1>
         <ProjectImage src={projectImage} alt="Notedz Cover" />
-
-        {/* Descrição do projeto */}
-        <h2>Notedz</h2>
         <ProjectDescription>
-          O <ProjectUnderline>Notedz</ProjectUnderline> é um lugar para as pessoas escreverem qualquer coisa que quiserem. O objetivo do <ProjectUnderline>Notedz</ProjectUnderline> é permitir que qualquer pessoa possa criar anotações de forma rápida e prática. Sem coletar informação nenhuma do usuário, permitindo que o mesmo tenha o máximo de privacidade e possa utilizar a aplicação com segurança e extraíndo 100% do potencial dela.
+          O <ProjectUnderline>Notedz</ProjectUnderline> é um lugar onde qualquer pessoa pode criar anotações de forma rápida e prática. Sem coletar informação nenhuma do usuário, permitindo que o mesmo tenha o máximo de privacidade e possa utilizar a aplicação com segurança e extraíndo 100% do potencial dela.
         </ProjectDescription>
-
-        {/* Lista de tecnologias */}
         <TechList>
           <TechItem>React.js</TechItem>
           <TechItem>Styled-Components</TechItem>
           <TechItem>LocalStorage</TechItem>
         </TechList>
-
-        {/* Botões para visitar o projeto e repositório */}
         <ButtonGroup>
           <VisitButton href="https://notedz.vercel.app" target="_blank" rel="noopener noreferrer">
             <VisitButtonText>Visitar projeto</VisitButtonText>
-            <FiExternalLink size={16} /> {/* Ícone para abrir em nova aba */}
+            <FiExternalLink size={16} />
           </VisitButton>
-
-          <VisitButton href="https://github.com/seu-usuario/notedz" target="_blank" rel="noopener noreferrer">
+          <VisitButton href="https://github.com/leoz11/notedz" target="_blank" rel="noopener noreferrer">
             <VisitButtonText>Ver código</VisitButtonText>
-            <FiExternalLink size={16} /> {/* Ícone para abrir em nova aba */}
+            <FiExternalLink size={16} />
           </VisitButton>
         </ButtonGroup>
       </ProjectItem>
-
-      {/* Adicione mais projetos aqui, se necessário */}
+      <ProjectItem>
+        <h1>Commitz</h1>
+        <ProjectImage src={projectImageTwo} alt="Commitz Cover" />
+        <ProjectDescription>
+          O <ProjectUnderline>Commitz</ProjectUnderline> é um lugar onde qualquer pessoa pode controlar seus metas anuais de maneira rápida e prática, tendo informações de quantas metas já completou e de quanto tempo falta para o ano acabar. Sem coletar informação nenhuma do usuário, permitindo que o mesmo tenha o máximo de privacidade e possa utilizar a aplicação com segurança e extraíndo 100% do potencial dela.
+        </ProjectDescription>
+        <TechList>
+          <TechItem>React.js</TechItem>
+          <TechItem>TailwindCSS</TechItem>
+          <TechItem>LocalStorage</TechItem>
+        </TechList>
+        <ButtonGroup>
+          <VisitButton href="https://notedz.vercel.app" target="_blank" rel="noopener noreferrer">
+            <VisitButtonText>Visitar projeto</VisitButtonText>
+            <FiExternalLink size={16} />
+          </VisitButton>
+          <VisitButton href="https://github.com/leoz11/notedz" target="_blank" rel="noopener noreferrer">
+            <VisitButtonText>Ver código</VisitButtonText>
+            <FiExternalLink size={16} />
+          </VisitButton>
+        </ButtonGroup>
+      </ProjectItem>
     </ProjectsWrapper>
   );
 };

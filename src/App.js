@@ -1,13 +1,12 @@
-// src/App.js
-
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import styled, { ThemeProvider } from 'styled-components';
-import { lightTheme, darkTheme } from './styles/themes'; // Importando temas
-import GlobalStyles from './styles/GlobalStyles'; // Importando estilos globais
-import Header from './components/Header'; // Importando Header
-import Home from './pages/Home'; // Importando Home
-import Projects from './pages/Projects'; // Importando Projects
+import { lightTheme, darkTheme } from './styles/themes';
+import GlobalStyles from './styles/GlobalStyles';
+import Header from './components/Header';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import About from './pages/About';
 
 const AppWrapper = styled.div`
   min-height: 100vh;
@@ -22,7 +21,7 @@ const AppWrapper = styled.div`
 `;
 
 function App() {
-  const [theme, setTheme] = useState('light'); // Estado do tema
+  const [theme, setTheme] = useState('light');
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
@@ -37,6 +36,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/projects" element={<Projects/>} />
+            <Route path="/about" element={<About/>} />
           </Routes>
         </AppWrapper>
       </BrowserRouter>

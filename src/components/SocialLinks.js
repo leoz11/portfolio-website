@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
-import { FaBluesky } from "react-icons/fa6";
+import { FaBluesky, FaXTwitter } from "react-icons/fa6";
 
 const SocialLinksWrapper = styled.div`
   display: flex;
@@ -57,6 +57,11 @@ const SocialLinks = () => {
       <SocialLink href="https://bsky.app/profile/leozvlr.bsky.social" target="_blank" rel="noopener noreferrer">
         <IconWrapper><FaBluesky /></IconWrapper>
         Bluesky
+        <ArrowIcon>↗</ArrowIcon>
+      </SocialLink>
+      <SocialLink href="https://x.com/leozinnjs" target="_blank" rel="noopener noreferrer">
+        <IconWrapper><FaXTwitter /></IconWrapper>
+        Twitter
         <ArrowIcon>↗</ArrowIcon>
       </SocialLink>
     </SocialLinksWrapper>
